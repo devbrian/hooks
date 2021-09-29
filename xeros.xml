@@ -78,6 +78,7 @@
         </add>
         <add>
             <accessor>Interface</accessor>
+            <into>com/client/Client</into>
             <field>ai</field>
             <methodname>getInterfaceCache</methodname>
             <desc>[%sInterface</desc>
@@ -278,13 +279,157 @@
          <descfield>J</descfield>
       </add>
 
+      <add>
+         <accessor>Client</accessor>
+         <field>bn</field>
+         <methodname>getCurrentStats</methodname>
+         <descfield>[I</descfield>
+      </add>
+      <add>
+         <accessor>Client</accessor>
+         <field>br</field>
+         <methodname>getSettings</methodname>
+         <descfield>[I</descfield>
+      </add>
+      <add>
+         <accessor>Client</accessor>
+         <field>fq</field>
+         <methodname>getCurrentExp</methodname>
+         <descfield>[I</descfield>
+      </add>
 
+      <add>
+         <accessor>Client</accessor>
+         <field>kj</field>
+         <methodname>getCollisionMap</methodname>
+         <desc>[%sCollisionMap</desc>
+         <descfield>[Lcom/client/t;</descfield>
+      </add>
 
-    </getters>
-    <setters>
-    </setters>
-    <invokers>
-    </invokers>
-    <callbacks>
+      <add>
+         <accessor>CollisionMap</accessor>
+         <field>a</field>
+         <methodname>getFlags</methodname>
+         <descfield>[[I</descfield>
+      </add>
+
+      <add>
+         <accessor>Player</accessor>
+         <field>an</field>
+         <methodname>getName</methodname>
+         <descfield>Ljava/lang/String;</descfield>
+      </add>
+      <add>
+            <accessor>Client</accessor>
+            <field>bm</field>
+            <methodname>getPlayers</methodname>
+            <desc>[%sPlayer</desc>
+            <descfield>[Lcom/client/bf;</descfield>
+       </add>
+      <add>
+         <accessor>NpcDef</accessor>
+         <field>j</field>
+         <methodname>getName</methodname>
+         <descfield>Ljava/lang/String;</descfield>
+      </add>
+
+      <add>
+         <accessor>Character</accessor>
+         <field>A</field>
+         <methodname>getAnimation</methodname>
+         <descfield>I</descfield>
+      </add>
+      <add>
+         <accessor>Character</accessor>
+         <field>H</field>
+         <methodname>getCurrentHealth</methodname>
+         <descfield>I</descfield>
+      </add>
+      <add>
+         <accessor>Character</accessor>
+         <field>e</field>
+         <methodname>getInteractingEntity</methodname>
+         <descfield>I</descfield>
+      </add>
+      <add>
+         <accessor>Character</accessor>
+         <field>G</field>
+         <methodname>getLoopCycleStatus</methodname>
+         <descfield>I</descfield>
+      </add>
+      <add>
+         <accessor>Character</accessor>
+         <field>I</field>
+         <methodname>getMaxHealth</methodname>
+         <descfield>I</descfield>
+      </add>
+      
+      <add>
+         <accessor>Interface</accessor>
+         <field>aX</field>
+         <methodname>getStackSizes</methodname>
+         <descfield>[I</descfield>
+      </add>
+      <add>
+         <accessor>Interface</accessor>
+         <field>aY</field>
+         <methodname>getItems</methodname>
+         <descfield>[I</descfield>
+      </add>
+
+      <add>
+         <accessor>Client</accessor>
+         <field>ix</field>
+         <methodname>getMenuAction1</methodname>
+         <descfield>[J</descfield>
+      </add>
+      <add>
+         <accessor>Client</accessor>
+         <field>iu</field>
+         <methodname>getMenuAction2</methodname>
+         <descfield>[I</descfield>
+      </add>
+      <add>
+         <accessor>Client</accessor>
+         <field>iv</field>
+         <methodname>getMenuAction3</methodname>
+         <descfield>[I</descfield>
+      </add>
+      <add>
+         <accessor>Client</accessor>
+         <field>iw</field>
+         <methodname>getMenuActionId</methodname>
+         <descfield>[I</descfield>
+      </add>
+
+   </getters>
+   <setters>
+   </setters>
+   <invokers>
+      <add>
+         <accessor>Client</accessor>
+         <methodname>doAction</methodname>
+         <invokemethod>H</invokemethod>
+         <desc>V</desc>
+         <argsdesc>(I)</argsdesc>
+      </add>
+      <add>
+         <accessor>Client</accessor>
+         <methodname>walkTo</methodname>
+         <invokemethod>a</invokemethod>
+         <desc>Z</desc>
+         <argsdesc>(IIIIIIIIIZI)</argsdesc>
+      </add> 
+   </invokers>
+   <callbacks>
+      <add>
+         <accessor>Client</accessor>
+         <methodname>H</methodname>
+         <desc>(I)V</desc>
+         <callclass>org/rev317/min/callback/MenuAction</callclass>
+         <callmethod>intercept</callmethod>
+         <calldesc>(I)V</calldesc>
+         <callargs>0</callargs>
+      </add>
 	</callbacks>
 </injector>
