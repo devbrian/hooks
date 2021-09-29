@@ -222,12 +222,64 @@
     <descfield>J</descfield>
     </add>
     <add>
-    <classname>com/client/bu</classname>
-    <field>m</field>
-    <methodname>getHash</methodname>
-    <descfield>J</descfield>
+        <classname>com/client/bu</classname>
+        <field>m</field>
+        <methodname>getHash</methodname>
+        <descfield>J</descfield>
     </add>
-        
+
+     <add>
+        <accessor>Node</accessor>
+        <field>az</field>
+        <methodname>getNext</methodname>
+        <desc>%sNode</desc>
+        <descfield>Lcom/client/ar;</descfield>
+    </add>
+    <add>
+        <accessor>Node</accessor>
+        <field>ax</field>
+        <methodname>getKey</methodname>
+        <descfield>J</descfield>
+    </add>
+
+
+    <add>
+        <accessor>Deque</accessor>
+        <field>b</field>
+        <methodname>getCurrent</methodname>
+        <desc>%sNode</desc>
+        <descfield>Lcom/client/ar;</descfield>
+    </add>
+    <add>
+        <accessor>Deque</accessor>
+        <field>a</field>
+        <methodname>getHead</methodname>
+        <desc>%sNode</desc>
+        <descfield>Lcom/client/ar;</descfield>
+    </add>
+
+    <add>
+         <accessor>NpcDef</accessor>
+         <field>v</field>
+         <methodname>getId</methodname>
+         <desc>I</desc>
+         <descfield>J</descfield>
+      </add>
+      <!-- <add>
+         <accessor>NpcDef</accessor>
+         <field>j</field>
+         <methodname>getNpcName</methodname>
+         <descfield>Ljava/lang/String;</descfield>
+      </add> -->
+      <add>
+         <accessor>NpcDef</accessor>
+         <field>v</field>
+         <methodname>getLongId</methodname>
+         <descfield>J</descfield>
+      </add>
+
+
+
     </getters>
     <setters>
     </setters>
